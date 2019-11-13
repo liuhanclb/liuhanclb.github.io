@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			*{
+				padding: 0; margin-top: 10px; margin-bottom: 10px;
+			}
+			.ww{ width: 100%; height: 100px; background-color: gray; position:-webkit-sticky; position: sticky; top: 0; z-index: 10; opacity: 0.6;
+			border-radius:20px ;}
+			.AA{
+				display: flex; width: 100%; height: 100px; flex-wrap: nowrap;
+				 list-style: none; 
+				justify-content: space-between; 
+			}
+			.AA li{
+				 flex-basis: 17%; background-image: linear-gradient(to left,darkred,black) ;
+			}
+			.ee{ background-color: rgb(110,33,40,0.5); text-align: center; line-height:100px; font-family: "楷体";
+			font-size: x-large; font-weight: bold; color: white;
+			}
+			@media (max-width:1000px) { 
+			.AA li{
+			flex-basis: 33.3%;  z-index: 0;
+			}
+			.AA{
+			flex-wrap: wrap; 
+			}
+			}
+			@media (max-width:750px) { 
+			.AA li{
+			flex-basis: 50%; 
+			}
+			.AA{
+			flex-wrap: wrap;
+			}
+			}
+			@media (max-width:550px) { 
+			.AA li{
+			flex-basis: 98%; 
+			}
+			.AA{
+			flex-wrap: wrap;
+			}
+			}
+			.A1{
+				 display:flex; justify-content:space-around;  width: 100%; flex-wrap: nowrap;
+				margin: auto; background-image: url(img/82839c0789e1c3956ec4cdbffbad7db0_490895bbd2804754873307c7d141435d_th.gif);
+				background-size: cover; z-index: 0;
+			}
+			.vv{
+				 height: 320px; width: 250px; opacity: 0.7; border: 2px red solid;
+			}
+			@media only screen and (max-width: 1000px) {
+				.A1{
+					 flex-wrap: wrap;
+				}
+				
+			}
+			.ff{
+				width: 300px; height: 10px; background-color: darkred;
+				position: relative; -webkit-animation: ttty 6s infinite;  animation-direction: alternate;
+			}
+			@-webkit-keyframes ttty{
+				from{ left: 0px;}
+				to{  left: 1230px;}
+			}
+			.ee:hover{
+				color: gold;
+			}
+			.a1{
+				background-image: url(img/25bde4cce0475d4dbc38349433b129eb_O1CN01UMuiMw1sGVZQK8mIq_!!0-item_pic.jpg_430x430q90.jpg);
+			background-size: cover;
+			}
+			.a2{
+				background-image: url(img/0c5ef5385fab2fd8299b4dca92167012_TB1LrcmtCtYBeNjSspkXXbU8VXa_!!0-item_pic.jpg_430x430q90.jpg);
+			background-size: cover;
+			}
+			.a3{
+				background-image: url(img/26cb8e28f6672bdad5c282937488a2c2_O1CN01G52GmL1qgUpj3LxwM_!!2-item_pic.png);
+			background-size: cover;
+			}
+			.a4{
+				background-image: url(img/8717037290c202e2b168f11faa2660cf_TB2rOO3mYJmpuFjSZFwXXaE4VXa_!!104692143.jpg);
+			background-size: cover;
+			}
+			.a5{
+				background-image: url(img/47748d93f977be019279585dd6ef56bf_b111bd4cfa271618.jpg);
+			background-size: contain;
+			}
+			.a6{
+				background-image: url(img/19634af25a22e20ff9ef605193457422_ba5de6b178cb9d4a.jpg);
+			background-size:contain;
+			}
+			.vv:hover{
+				opacity: 0.9; border: 2px darkred solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="ww"></div>
+		<hr />
+		<div class="A1 dd">
+			<div class="a1 vv" style="background-color: aliceblue;"></div>
+			<div class="a2 vv" style="background-color: aquamarine;"></div>
+			<div class="a3 vv" style="background-color: bisque;"></div>
+			<div class="a4 vv" style="background-color: chartreuse;"></div>
+			<div class="a5 vv" style="background-color: darkmagenta;"></div>
+			<div class="a6 vv" style="background-color: grey;"></div>
+		</div>
+		<div class="ff"></div>
+		<div><ol class="AA ">
+			<li class="AA1 ee">数码电器</li>
+			<li class="AA2 ee">家用电器</li>
+			<li class="AA3 ee">运动户外</li>
+			<li class="AA4 ee">图书文娱</li>
+			<li class="AA5 ee">手工艺品</li>
+			<li class="AA6 ee">飞机坦克</li>
+		</ol>
+		
+		
+		</div>
+	</body>
+</html>
