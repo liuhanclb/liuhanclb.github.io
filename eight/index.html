@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			div{
+				width: 100%; height: 100px;
+			}
+			div>p{
+				text-align: center; display: inline-block; width: 100%; font-size: xx-large; font-family: castellar;
+			}
+			table{
+				border-collapse:collapse; 
+				margin:auto;
+			}
+			th{width:200px; }
+			.io{
+				border-radius: 5px;  outline: none;
+			}
+			h3{
+				display: inline;
+			}
+			.oo{
+				margin: 0; padding: 0;
+			}
+			a{
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div><p>My table</p></div>
+				<center>
+				<h3>name</h3><input type="text" class="io" id="myname"/>
+				<h3>number</h3><input type="number" class="io" id="number1"/>
+				<h3>class</h3><input type="text" class="io" id="myclass"/>
+				<input type="button" class="oo" value="Sumbit" id="sumbit" onclick="add()"/>
+				<table border="2" bgcolor="lightblue" id="tab">
+			<tr>
+				<th>name</th>
+				<th>number</th>
+				<th>class</th>
+				<th>
+							<a onclick="empty()" href="">删除</a>
+						</th>
+			</tr>
+			
+			</table>
+			</center>
+		
+	</body>
+</html>
