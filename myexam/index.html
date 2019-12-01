@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/jquery-3.4.1.js"></script>
+		<script src="js/jquery-migrate-1.4.1.js"></script>
+		<script src="js/jquery.mobile-1.4.5.js"></script>
+		<link rel="stylesheet" href="js/jquery.mobile-1.4.5.css" />
+		<title></title>
+		 <style class="cp-pen-styles">
+		html
+        {
+            font-family: 'Noto Sans' , serif;
+        }
+        
+        .blocks
+        {
+            margin: auto;
+            max-width: 1070px;
+            padding: 0;
+        }
+        
+        .blocks li
+        {
+            color: #fff;
+            background-color: #2196F3;
+            cursor: default;
+            float: left;
+            list-style: none;
+            margin: 1%;
+            padding: 60px 0;
+            position: relative;
+            text-align: center;
+            -webkit-transition: .3s cubic-bezier(.3,0,0,1.3);
+            transition: .3s cubic-bezier(.3,0,0,1.3);
+            width: 31%;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .blocks li:hover
+        {
+            -webkit-transform: scale(.7);
+            -ms-transform: scale(.7);
+            transform: scale(.7);
+            z-index: 3000;
+        }
+        
+        .popup
+        {
+            background-color: inherit;
+            color: #fff;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            padding: 15px;
+            border-radius: 4px;
+            -webkit-transition: .3s cubic-bezier(.3,0,0,1.37);
+            transition: .3s cubic-bezier(.3,0,0,1.37);
+        }
+        
+        .popup span
+        {
+            font-size: 12px;
+            font-weight: normal;
+            left: 0;
+            padding: 15px 25px;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        
+        .popup h3
+        {
+            font-size: 13px;
+            margin: 0 0 5px;
+            padding: 0;
+        }
+        
+        .blocks li:hover .popup
+        {
+            opacity: 1;
+            -webkit-transform: scale(2);
+            -ms-transform: scale(2);
+            transform: scale(2);
+            box-shadow: 0 0 10px 2px rgba(0,0,0,.4);
+        }
+        .ee2{
+        	margin:2000px;
+        }
+    </style>
+
+	</head>
+	<body>
+		<center>
+			<div data-role="page" id="page1">
+			<div data-role="header">
+				<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;创业计划书</h1>
+				<div date-role="main" class="ui-content">
+					<ul>
+						<li>
+							<a href="#page1" class="ui-btn ui-btn-icon-left ui-icon-action" data-transition="slide">主页</a>
+						</li>
+						<li>
+							<a href="#page2" class="ui-btn ui-btn-icon-left ui-icon-action" data-transition="slide">第二页</a>
+						</li>
+						<li>
+							<a href="#page3" class="ui-btn ui-btn-icon-left ui-icon-action" data-transition="slide">第三页</a>
+						</li>
+					</ul>
+				
+			</div>
+			<ul class="blocks">
+        <li>创业项目<div class="popup">
+            <span>
+                <h3>
+                    创业项目</h3>
+               阅读app</span></div>
+        </li>
+        <li>组织与人员<div class="popup">
+            <span>
+                <h3>
+                    组织与人员</h3>
+                一群打击盗版的人</span></div>
+        </li>
+        <li>创新点<div class="popup">
+            <span>
+                <h3>
+                    创新点</h3>
+                押金制</span></div>
+        </li>
+        <li>核心竞争力<div class="popup">
+            <span>
+                <h3>
+                    核心竞争力</h3>
+                页面精美，费用低</span></div>
+        </li>
+        <li>运营计划<div class="popup">
+            <span>
+                <h3>
+                    运营计划</h3>
+                。。。。。。</span></div>
+        </li>
+        <li>投资.营收.利润预测<div class="popup">
+            <span>
+                <h3>
+                    投资.营收.利润预测</h3>
+                。。。。。。</span></div>
+        </li>
+    </ul>
+		</div>
+		<div data-role="footer"></div>
+		</div>
+		</center>
+		<div class="ee2"></div>
+		<center>
+			<div id="page2" data-role ="page">
+			<div data-role="header">
+				<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;创业计划书</h1>
+				<div date-role="main" class="ui-content">
+					<ul>
+						<li>
+							<a href="#page1" class="ui-btn ui-btn-icon-left ui-icon-action" data-transition="slide" id="tt1">主页</a>
+						</li>
+						<li>
+							<a href="#page2" class="ui-btn ui-btn-icon-left ui-icon-action" data-transition="slide" id="tt2">第二页</a>
+						</li>
+						<li>
+							<a href="#page3" class="ui-btn ui-btn-icon-left ui-icon-action" data-transition="slide" id="tt3">第三页</a>
+						</li>
+					</ul>
+				</div>
+				<div style="width: 600px;">
+					一.项目概况
+（一）项目描述
+盗版书籍作品泛滥，盗版网站屡禁不止，极大的损害了作者的权益，破坏了正常的市场秩序。还有盗版书籍的粗制滥造，盗版网站的乱码，错误，也极大的影响了读者的阅读感官。在一定程度上也打击了作者的创作意向和积极性，遏制了正版的发展。随着互联网的迅猛发展，无论是数字音乐、电影、网络小说都随着互联网的进步而发光发热。很多热门的网络小说改编影视作品的热映，网络小说的影响力也与日俱增，成为了互联网上不可忽视的重要组成部分。由于侵权成本低，维权成本过高，使得盗版网络小说猖獗，创作者及原创网站维权乏力。特别是在目前这个传播性快与开放性的互联网时代，使得网络小说在版权保护上的难度更加大。
+（二）盈利模式
+1走精品路线，营造舒适的阅读氛围，有声阅读。无广告。不按章节收费。看书模式为借书，交一定押金（如100元，最少两个月）时间到后返还。时间长福利多。
+2独家作品，利用垄断优势，做好防盗措施。设置交流区让读者与作者密切交流。
+二．创业团队情况
+热爱阅读，支持正版并有意向的人
+三．市场评估
+针对喜欢看电子书的并长时间阅读的群体。盗版书籍，网站过于劣质，广告多，乱码，错误严重。现在的正版网站防盗措施不严密，大网站作品盗版严重。急需解决盗版问题。近年来据相关部门数据统计，2015年盗版给网络文学带来的损失达79.7亿元，其中移动端付费阅读收入损失达43.6亿元。2016年损失为79.8亿元，其中移动端付费阅读收入损失达50.2亿元。2017年中国网络文学整体盗版行业损失约超74亿元。          
+四．市场营销计划
+（一）价格策略
+开始低价，打开市场，获取知名度。
+（二）销售方式
+ 交一定押金（如100元，最少两个月）时间到后返还。 
+五．企业组织结构
+待定
+六．投资预算及资金来源 
+待定
+七．经营风险和规避措施
+（一）市场难以打开
+在市场经济相对发达的今天，市场早已经由卖方市场转化为买方市场，任何产品和服务都经历过充分竞争或正面临着充分竞争的压力，在供过于求的市场要分上一杯羹，确实得有过人之力与过人之举，否则就会因为不能及时地被市场接受与容纳而淘汰出局。所以，阅读软件可能打不开市场。
+（二）资金缺乏
+世界上没有一个企业可以按照理想路径直接达到预定的目标。所以创业途中可能资金缺乏。
+（三）决策风险
+决策的风险往往是由于信息与资源（技术、人才、管理、资本、品牌、市场等）不对称造成的，导致企业去做不该做的事，做没有能力做的事或者把该做的事做歪了、能做好的事做坏了。
+　　企业有限的人力、物力、财力做自己做不到的事、不该做的事、不能做好的事，也是中国企业面临的一大风险。决策的风险往往是由于信息与资源（技术、人才、管理、资本、品牌、市场等）不对称造成的，导致企业去做不该做的事，做没有能力做的事或者把该做的事做歪了、能做好的事做坏了。
+（四）管理风险
+企业发展完成原始资本积累后，企业面临着严重的管理危机，原有的以老板个人为核心、事无巨细一切均由老板说了算的经营管理系统严重不适应企业的发展的需要，管理面临着系统化、职能化、专业化、制度化、流程化，企业从上到下，包括老板本人都得按规距办事，企业就要像手表一样，设计一个严密而精确的运转系统，以确保企业进行有效的生产、经营和管理，以实现预期的目标。
+
+　　很多企业因为业绩增加了、人员增加了、事务增加了，企业的经营管理模式没有改变，所有的事务依然还在压到老板一个人身上，企业司内部机构不健全，职能不明确，权责不清晰，只要发生变故一律推给老板亲自处理，于是企业对内对外的事务也是按下了葫芦起了瓢，老板就像个消除队队员，天天一大堆的事务要处理，同时还要处理来自内部和外部的各种矛盾的纷争。
+
+　　由于企业除了老板外其余的人都没有明确的责任，一个企业如果99%的人都没有责任心，风险无处不在，老板纵使有三头六臂也，七十二变化也终难抵住四处的企业的船漏。此时不是老板亡就是企业亡。
+（五）人才风险
+很多的创业者面临的风险，俗话说十创九死，二八定律，据统计每天有几千家公司倒闭，也有几千家新注册公司。很多的老板没有考虑以下的风险问题，不具备以下问题的解决，就开始注册公司开始营业，所以导致企业亏损或倒闭的运营，据统计：中国民营企业平均寿命只有1.5年，其中有50%以上在创业期就死亡，其主要原因就是对市场竞争带来的增加的风险缺乏心理和物质上的准备，还有重要原因人才的缺乏人才配备不全面，很多老板忽略了人才的风险，人才是第一生产力。（所以干正确的事，选正确的人）
+大多数企业出于各种原因，往往都是由投资者或老板自己边干边学边积累，如此小打小闹问题不大，但是企业一旦要步入规模或者上档次，马上就显得力不从心。市场上从来就没有招之即来，来之能战的人才。适用的人才都要经过一段时间的培养与磨合才能适合企业的需要。
+
+　　中国民营企业不愿意为自己需要的人才付出代价、交纳学费，结果即使招来的人都是精兵强将，终将会因为能人之间的纷争不断，而使企业陷于内耗，一个人才济济企业却依然业绩平平甚至很快陷于危机，这样的现象在中国的民营企业中是比比皆是。
+
+　　没有人才，不会选择人才，不会经营人才，不会善待人才，不给人才以成长和适应的过程，一句话，没有人才想人才，有了人才不会用人才，这是中国企业面临着的一大风险。在五到十年内死亡企业，往往与企业的人才战略或策略失败有关。
+				</div>
+				<div data-role="footer"></div>
+			</div>
+		</div>
+		</center>
+		<div class="ee2"></div>
+		<center>
+			<div id="page3" data-role ="page">
+			<div data-role="header">
+				<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;创业计划书</h1>
+				<div date-role="main" class="ui-content">
+					<ul>
+						<li>
+							<a href="#page1" class="ui-btn ui-btn-icon-left ui-icon-action" data-transition="slide">主页</a>
+						</li>
+						<li>
+							<a href="#page2" class="ui-btn ui-btn-icon-left ui-icon-action" data-transition="slide">第二页</a>
+						</li>
+						<li>
+							<a href="#page3" class="ui-btn ui-btn-icon-left ui-icon-action" data-transition="slide">第三页</a>
+						</li>
+					</ul>
+				</div>
+				<div data-role="footer"></div>
+			</div>
+		</div>
+		</center>
+<div class="ee2"></div>
+	</body>
+</html>
