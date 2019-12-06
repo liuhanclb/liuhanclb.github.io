@@ -129,11 +129,23 @@
         	
         }
     </style>
-
+<script>
+$(document).ready(function(){
+  $("#page1").click(function(){
+    $("#div1").fadeIn(3000);
+  });
+  $("#page2").click(function(){
+    $("#div2").fadeIn(3000);
+  });
+  $("#page3").click(function(){
+    $("#div3").fadeIn(3000);
+  });
+});
+</script>
 	</head>
 	<body>
 		<center>
-			<div data-role="page" id="page1">
+				<div data-role="page" id="page1">
 			<div data-role="header">
 				<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;创业计划书</h1>
 				<div date-role="main" class="ui-content">
@@ -150,6 +162,7 @@
 					</ul>
 				
 			</div>
+			<div id="div1" style="display:none;">
 			<ul class="blocks">
         <li>创业项目<div class="popup">
             <span>
@@ -161,7 +174,7 @@
             <span>
                 <h3>
                     组织与人员</h3>
-                一群打击盗版的人</span></div>
+               对网络，阅读感兴趣的人</span></div>
         </li>
         <li>创新点<div class="popup">
             <span>
@@ -191,10 +204,11 @@
 		</div>
 		<div data-role="footer"></div>
 		</div>
+			</div>
 		</center>
 		<div class="ee2"></div>
 		<center>
-			<div id="page2" data-role ="page">
+				<div id="page2" data-role ="page">
 			<div data-role="header">
 				<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;创业计划书</h1>
 				<div date-role="main" class="ui-content">
@@ -210,6 +224,7 @@
 						</li>
 					</ul>
 				</div>
+				<div id="div2" style="display:none;">
 				<div style="width: 600px;">
 					<p>一.项目概况
 （一）项目描述
@@ -256,6 +271,7 @@
 				<div data-role="footer"></div>
 			</div>
 		</div>
+			</div>
 		</center>
 		<div class="ee2"></div>
 		<center>
@@ -278,7 +294,6 @@
 					<p class="rerr">阅读app</p>
 					<div class="rr"><a href="css/333.html">点击安装</a></div>
 				</div>
-				
 				<div data-role="footer"></div>
 			</div>
 		</div>
